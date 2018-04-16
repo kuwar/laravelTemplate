@@ -1,0 +1,353 @@
+ /*!---------- GLOBAL STYLES ----------*/
+
+ @font-face {
+	font-family: 'wallpoetregular';
+	src: url('../fonts/wallpoet-regular-webfont.eot');
+	src: url('../fonts/wallpoet-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/wallpoet-regular-webfont.woff2') format('woff2'), url('../fonts/wallpoet-regular-webfont.woff') format('woff'), url('../fonts/wallpoet-regular-webfont.ttf') format('truetype'), url('../fonts/wallpoet-regular-webfont.svg#wallpoetregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+*,
+a,
+a:hover,
+a:focus,
+a:active,
+a:visited,
+button,
+input,
+.btn,
+.btn:focus {
+	outline: 0;
+	outline: none;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+iframe {
+	border: 0;
+}
+body {
+	background: #eee;
+	font-size: 16px;
+	line-height: 24px;
+	color: #666;
+	background: #eff0e7;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+body strong{
+	font-weight: 900;
+}
+/*!---------- TYPOGRAPHY ----------*/
+
+/*!---------- LISTS ----------*/
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	margin: 0;
+	padding: 0;
+}
+.main-container {
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+}
+
+.icon-course {
+	margin-bottom: 40px;
+}
+
+.features-3 .feature{
+	margin-top: 40px;
+}
+
+.course-wrap h3 {
+	margin-bottom: 24px !important;
+}
+
+.course-wrap p {
+	color: #4A4A4A;
+	font-size: 16px;
+	margin-bottom: 24px;
+}
+
+.main-container {
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	clear: both;
+	position: relative;
+}
+
+.slider {
+	position: relative;
+	overflow: hidden;
+}
+
+.modal {
+	z-index: 9999;
+	overflow: hidden;
+	overflow-y: hidden;
+}
+
+.modal-content {
+	border-radius: 0px;
+}
+
+.banner-modal {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-header {
+	padding: 0px;
+}
+
+.modal-body {
+	padding: 0px 10px;
+}
+
+.margin-header {
+	margin-bottom: 26px;
+}
+
+.modal {
+	text-align: center;
+	padding: 0!important;
+}
+
+.modal:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -4px;
+}
+
+.modal-dialog {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.v-align-children {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
+	-webkit-align-items: center;
+	justify-content: center;
+	-webkit-justify-content: center;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+}
+
+.v-align-children-column {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
+	-webkit-align-items: center;
+	justify-content: center;
+	-webkit-justify-content: center;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+}
+
+.disable-select {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+@media all and (max-width: 990px) {
+	.v-align-children {
+		display: block !important;
+	}
+}
+
+
+/*!---------- SECTIONS ----------*/
+
+	/*** Modal slider **/
+
+	.courseoverview-nav a.btn {
+		color: #62B6F4;
+		position: absolute;
+		background: transparent;
+		border: 1px solid #62B6F4;
+		font-size: 27px;
+		padding: 0;
+		width: 94px;
+		height: 40px;
+		line-height: 34px;
+		bottom: 15px;
+	}
+
+	.courseoverview-nav a.btn.prev {
+		right: 125px;
+	}
+
+	.courseoverview-nav a.btn.next {
+		right: 15px;
+	}
+
+	.course-modal .modal-dialog {
+		width: 50%;
+	}
+
+	.courseoverview-nav a.btn:hover {
+		background: #62B6F4;
+		color: #fff;
+	}
+
+	.courseoverview-nav a.btn.inactive {
+		pointer-events: none;
+		opacity: 0.3;
+	}
+
+	/** custom icon **/
+
+	.icon-course {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-origin: border-box;
+		background-position: 0 0;
+		width: 65px;
+		height: 62px;
+		object-fit: contain;
+	}
+
+/*	.icon-overview {
+		background-image: url(img/overview.svg);
+	}*/
+
+	.icon-overview {
+		background-image: url(img/overview.svg);
+	}
+
+	.icon-principle {
+		background-image: url(img/principle.svg);
+	}
+
+	.icon-rights {
+		background-image: url(img/rights.svg);
+	}
+
+	.icon-responsibility {
+		background-image: url(img/responsibility.svg);
+	}
+
+	/*** Modal slider **/
+
+	.owl-theme .owl-controls {
+		display: none !important;
+	}
+
+	#owl-courseoverview .item .course-overview-content {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	.courseoverview-nav a.btn {
+		color: #62B6F4;
+		position: absolute;
+		background: transparent;
+		border: 1px solid #62B6F4;
+		font-size: 27px;
+		padding: 0;
+		width: 94px;
+		height: 40px;
+		line-height: 34px;
+		bottom: 15px;
+	}
+
+	.courseoverview-nav a.btn.prev {
+		right: 125px;
+	}
+
+	.courseoverview-nav a.btn.next {
+		right: 15px;
+	}
+
+	.course-modal .modal-dialog {
+		width: 50%;
+	}
+
+	.course-modal .modal-dialog .modal-footer {
+		padding: 47px 20px 20px;
+	}
+
+	.courseoverview-nav a.btn:hover {
+		background: #62B6F4;
+		color: #fff;
+	}
+
+	.courseoverview-nav a.btn.inactive {
+		pointer-events: none;
+		opacity: 0.3;
+	}
+
+	/** Slider **/
+
+	.feature h5 p {
+		font-size: 20px;
+	}
+	.features-2, .features-3 {
+		padding: 40px 0;
+		background: #FBFBFB;
+	}
+	section .container {
+		position: relative;
+		z-index: 2;
+	}
+	.features-3 h3 {
+		margin-bottom: 10px;
+		font-size: 36px;
+		font-weight: 600;
+		color: #000;
+	}
+	p:last-child {
+		margin-bottom: 0;
+	}
+	.features-3 .feature {
+		cursor: default;
+	}
+	.features-3 .feature i {
+		font-size: 72px;
+		color: #163f6b;
+		display: inline-block;
+		margin-bottom: 40px;
+		transition: all 0.2s ease;
+		-webkit-transition: all 0.2s ease;
+		-moz-transition: all 0.2s ease;
+	}
+	.features-3 h5 {
+		font-weight: 400;
+		margin-bottom: 15px;
+	}
+	.course-modal {
+		background: rgba(0,0,0,0.5);
+	}
+	.course-overview-content>.modal-header {
+		padding: 15px;
+	}
+	.course-overview-content>.modal-body {
+		padding: 20px;
+	}
+	.course-modal .modal-dialog .modal-footer {
+		padding: 47px 20px 20px;
+	}

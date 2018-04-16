@@ -1,0 +1,94 @@
+ .container-404 {
+     position: absolute;
+     width: 100vw;
+     height: 80vh;
+     max-width: 100vmin;
+     max-height: 80vmin;
+     top: 40%;
+     left: 50%;
+     transform: translate(-50%, -40%);
+ }
+
+ .particles-js-canvas-el {
+     position: absolute;
+     top: 0%;
+     left: 0%;
+     bottom: 100%;
+     right: 100%;
+ }
+
+ .not-found {
+     position: absolute;
+     top: 12%;
+     left: 3%;
+     text-align: center;
+     line-height: 2em;
+     font-size: 24px;
+     color: #5d7399;
+     font-family: Dosis;
+ }
+
+ .home-link {
+     font-size: 18px;
+     font-weight: 400;
+     color: inherit;
+     text-decoration: none;
+     opacity: 0.6;
+     border-bottom: 1px dashed rgba(93, 115, 153, 0.5);
+ }
+
+ .moko-404__a {
+     fill: #5aaf23
+ }
+
+ .moko-404__b {
+     fill: #70cf32
+ }
+
+ .moko-404__c {
+     fill: #8fea54
+ }
+
+ .moko-404__d {
+     fill: #f4f4f5
+ }
+
+ .moko-404__e {
+     fill: #e3e3e5
+ }
+
+ .moko-404__f {
+     fill: #1d3760
+ }
+
+ .moko-404__g {
+     fill: #1c4561
+ }
+
+ .moko-404__h {
+     fill: #61b729
+ }
+
+ .moko-404__i {
+     fill: #5bc92d
+ }
+
+ .moko-404__j {
+     fill: #6fd5d9
+ }
+
+ .moko-404__k {
+     fill: #2d3033
+ }
+
+ .moko-404__l {
+     fill: #6c7279
+ }
+
+ .moko-404__m {
+     fill: #163056
+ }
+
+ .moko_base {
+     fill: #c08497;
+ }

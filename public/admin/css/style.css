@@ -1,0 +1,282 @@
+html,
+body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.login-page {
+    background: linear-gradient(159.72deg, #29ABE2   14.56%, #4DB6E3   40.36%, #63C2EB   72.41%);
+    position: relative;
+}
+
+.btn-support {
+    float: right;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-right: 15px;
+    padding: 5px 15px 7px;
+    -webkit-transition: ease 0.2s;
+    transition: ease 0.2s;
+}
+
+.btn-support:hover,
+.btn-support:focus {
+    text-decoration: none;
+    color: #fff;
+    background: #63C2EB;
+}
+
+.form-holder {
+    max-width: 100%;
+    width: 400px;
+    margin: 0 auto;
+    top: 4%;
+    position: relative;
+    padding: 15px;
+}
+
+.logo {
+    text-align: center;
+    margin: 0 auto 70px;
+}
+
+.login-form .form-row {
+    margin: 15px 0;
+}
+
+.remember-me {
+    margin-bottom: 15px;
+    color: #fff;
+    position: relative;
+}
+
+.login-form .form-row label {
+    display: block;
+    margin: 0 0 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    width: 100%;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+    -webkit-transition: ease 0.2s;
+    transition: ease 0.2s;
+}
+
+.login-form .form-row label.active {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    color: #fff;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+} 
+
+.login-form input:focus:not([readonly]) {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #62B6F4;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    background: none;
+    color: #fff;
+    margin: 0;
+    padding: 5px 10px;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    outline: none;
+}
+
+.login-form input[type="submit"] {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 15px 40px;
+    -webkit-transition: ease 0.2s;
+    transition: ease 0.2s;
+    background: none;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.login-form input[type="submit"]:hover,
+.login-form input[type="submit"]:focus {
+    background: #63C2EB;
+    color: #fff;
+    border-color: #fff;
+}
+
+.login-form .form-password {
+    position: relative;
+}
+
+.login-form .form-password .btn-forget-password {
+    position: absolute;
+    top: 36px;
+    right: 0;
+    background: #dcdcdc;
+    color: #000;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.login-form .form-password .btn-forget-password:hover,
+.login-form .form-password .btn-forget-password:focus {
+    text-decoration: none;
+}
+
+.login-form .form-password .btn-forget-password span {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    background: #fff;
+    color: #000;
+    width: 130px;
+    border-radius: 5px;
+    display: none;
+    padding: 0 5px;
+}
+
+.login-form .form-password .btn-forget-password span:before {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-right: 7px solid #fff;
+    border-bottom: 5px solid transparent;
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -6px;
+}
+
+.login-form .form-password .btn-forget-password:hover span,
+.login-form .form-password .btn-forget-password:focus span {
+    display: block;
+}
+
+.error {
+    font-size: 14px;
+    margin-bottom: 15px;
+    display: block;
+    color: #EB5757;
+}
+
+
+
+
+
+
+/*** custome Checkboxes*/
+
+.remember-me {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.remember-me>input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.checkbox__icon {
+    display: inline-block;
+    /* Default State */
+    color: #fff;
+    /* Active State */
+    margin-right: 2px;
+}
+
+input[type="checkbox"]:checked~.checkbox__icon {
+    color: #fff;
+}
+
+
+
+
+/* IE6-8 Fallback */
+
+@media \0screen\,
+screen\9 {
+    .checkbox__icon {
+        display: none;
+    }
+
+    .remember-me>input[type="checkbox"] {
+        position: static;
+    }
+}
+
+.checkbox__icon:before {
+    font-family: "Ionicons";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 18px;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
+}
+
+.icon--check:before,
+input[type="checkbox"]:checked~.checkbox__icon:before {
+    content: "\f373";
+}
+
+.icon--check-empty:before,
+.checkbox__icon:before {
+    content: "\f372";
+}
+
+
+
+
+/*::::::::::::::::::::::MEDIA::::::::::::::::::::::*/
+
+@media only screen and (max-width: 500px) {
+
+    .login-form .form-password .btn-forget-password span {
+        top: -30px;
+        left: -106px;
+    }
+
+    .login-form .form-password .btn-forget-password span:before {
+
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #fff;
+        content: '';
+        top: 20px;
+        left: auto;
+        right: 6px;
+    }
+}
